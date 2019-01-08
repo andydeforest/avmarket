@@ -169,6 +169,7 @@ class ListingTableSeeder extends Seeder {
 			$listing->is_fractional_ownership = false;
 			$listing->fractional_price = null;
 			$listing->fractional_percentage = null;
+			$listing->is_featured = rand(1, 5) === 3;
 			$listing->flight_rules = rand(1,5) > 2 ? 'IFR' : 'VFR';
 			$listing->weight_units = 'LBS';
 			$listing->manufacturer = $ac['manufacturer'];

@@ -53,20 +53,20 @@
 				<div class="row">
 					<div class="col-md-6">
 						<ul class="list list-unstyled">
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Cessna</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Beechcraft</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Mooney</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Piper</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Cirrus</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Cessna') }}">Cessna</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Beechcraft') }}">Beechcraft</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Mooney') }}">Mooney</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Piper') }}">Piper</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Cirrus') }}">Cirrus</a></li>
 						</ul>
 					</div>
 					<div class="col-md-6">
 						<ul class="list list-unstyled">
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Socata</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Robinson</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Eurocopter</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">Bell</a></li>
-							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="#">More...</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Socata') }}">Socata</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Robinson') }}">Robinson</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Eurocopter') }}">Eurocopter</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturer/Bell') }}">Bell</a></li>
+							<li class="mb-2"><i class="fas fa-angle-right ml-1 mr-1 pr-2"></i> <a href="{{ URL::to('manufacturers') }}">More...</a></li>
 						</ul>
 					</div>
 				</div>

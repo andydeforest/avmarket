@@ -34,6 +34,7 @@ class CreateListingsTable extends Migration
 			$table->boolean('is_fractional_ownership');
 			$table->integer('fractional_price')->nullable();
 			$table->integer('fractional_percentage')->nullable();
+			$table->boolean('is_featured')->default(false);
 			// aircraft information
 			$table->string('flight_rules')->nullable();
 			$table->string('weight_units');

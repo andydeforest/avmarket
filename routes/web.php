@@ -17,5 +17,7 @@ Route::get('listing/{id}', 'ListingController@get');
 Route::get('listings/search', 'ListingController@search');
 Route::get('listings/handleFilter', 'ListingController@filter');
 Route::get('listings/{category}', 'ListingController@category');
-
 Route::get('listings/{category}/{manufacturer}', 'ListingController@categoryAndManufacturer');
+
+Route::get('manufacturer/{manufacturer}', 'ListingController@manufacturer');
+Route::get('model/{model}', 'ListingController@model');

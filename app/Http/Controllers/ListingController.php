@@ -40,6 +40,16 @@ class ListingController extends Controller {
 		return $this->manufacturerList($request, $cat);
 	}
 
+	public function manufacturer(Request $request, $manufacturer) {
+		$listings = Listing::whereRaw('lower(manufacturer) = \''.strtolower(urldecode($manufacturer)).'\'');
+		return $this->listings($request, $listings);
+	}
+
+	public function model(Request $request, $model) {
+		$listings = Listing::whereRaw('lower(model) = \''.strtolower(urldecode($model)).'\'');
+		return $this->listings($request, $listings);
+	}
+
 	public function categoryAndManufacturer(Request $request, $category, $manufacturer) {
 		$cat = Category::where('uri', $category)->first();
 		if(!$cat) {

@@ -8,8 +8,8 @@
 				<ul class="breadcrumb mt-3">
 					<li><a href="{{ URL::to('/') }}">Home</a></li>
 					<li><a href="{{ URL::to('listings/'.$listing->category->uri) }}">{{ $listing->category->name }}</a></li>
-					<li><a href="{{ URL::to('listings/manufacturer/'.$listing->manufacturer) }}">{{ $listing->manufacturer }}</a></li>
-					<li><a href="{{ URL::to('listings/model/'.$listing->model) }}">{{ $listing->model }}</a></li>
+					<li><a href="{{ URL::to('manufacturer/'.$listing->manufacturer) }}">{{ $listing->manufacturer }}</a></li>
+					<li><a href="{{ URL::to('model/'.$listing->model) }}">{{ $listing->model }}</a></li>
 				</ul>
 			</div>
 		</div>

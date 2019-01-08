@@ -83,13 +83,21 @@
 																<li><a class="dropdown-item" href="#">Diamond</a></li>
 															</ul>
 														</div>
-														<div class="col-lg-4 dropdown-mega-sub-content-block d-none d-lg-block">
-															<img src="img/menu-featured-image-1.png" class="img-responsive content-block-image" alt="" width="110" />
-															<span class="top-sub-title text-color-light-2 d-block">THE MOST</span>
-															<span class="text-color-light font-weight-bold d-block text-4 mb-4">POWERFUL</span>
-															<p class="text-color-light-2">A revolutionary theme<br> trusted by tons of<br> customers</p>
-															<a class="btn d-inline-block content-block-button text-color-primary font-weight-bold p-0" href="#">GET STARTED</a>
-														</div>
+														<?php
+															$featured = App\Helpers::randomFeatured();
+														?>
+														@if(!is_null($featured))
+															<div class="col-lg-4 dropdown-mega-sub-content-block d-none d-lg-block">
+																<span class="top-sub-title text-color-light-2 d-block">Check it out this featured listing:</span>
+																<span class="text-color-light font-weight-bold d-block text-4">{{ $featured->year }}&nbsp;{{ $featured->manufacturer }}&nbsp;{{ $featured->model }}</span>
+																<p class="text-color-light-2 font-weight-bold d-block text-4">${{ number_format($featured->price / 100, 2) }}</p>
+
+																<img src="{{ URL::asset($featured->get_primary_image_location()) }}" class="img-responsive pb-1" alt="" height="100" />
+																<p class="pt-2">
+																	<a class="btn d-inline-block content-block-button text-color-primary font-weight-bold p-0" href="{{ URL::to('listing/'.$featured->id) }}">SHOW ME</a>
+																</p>
+															</div>
+														@endif
 													</div>
 												</div>
 											</li>
