@@ -90,7 +90,7 @@
 															<div class="col-lg-4 dropdown-mega-sub-content-block d-none d-lg-block">
 																<span class="top-sub-title text-color-light-2 d-block">Check it out this featured listing:</span>
 																<span class="text-color-light font-weight-bold d-block text-4">{{ $featured->year }}&nbsp;{{ $featured->manufacturer }}&nbsp;{{ $featured->model }}</span>
-																<p class="text-color-light-2 font-weight-bold d-block text-4">${{ number_format($featured->price / 100, 2) }}</p>
+																<p class="text-color-light-2 font-weight-bold d-block text-4">${{ number_format($featured->price / 100) }}</p>
 
 																<img src="{{ URL::asset($featured->get_primary_image_location()) }}" class="img-responsive pb-1" alt="" height="100" />
 																<p class="pt-2">

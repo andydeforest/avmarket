@@ -63,9 +63,6 @@
 			"chmod -R 775 public/",
 			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
 			"php artisan key:generate",
-			"php artisan config:clear",
-			"composer require fzaninotto/faker",
-			"php artisan migrate:refresh --seed --force",
 			"npm install",
 			"npm run production"
 		]
